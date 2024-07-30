@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(
+    17 24 39 / var(--tw-bg-opacity)
+  ); /* Tailwind's gray-900 */
+  color: #e2e8f0; /* Tailwind's gray-300 */
+}
+
+/* Custom checkbox styling */
+.custom-checkbox:checked {
+  background-color: #f97316; /* Tailwind's orange-500 color */
+  border-color: #f97316; /* Tailwind's orange-500 color */
+}
+
+.custom-checkbox:checked::before {
+  content: "✔";
+  display: block;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1rem;
+}
